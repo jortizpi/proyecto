@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Usuarios | Andecol | </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+	<!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+  
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Andecol </span></a>
+            </div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Bienvenido,</span>
+                <h2>Juan J. Ortiz</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+			<!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-home"></i> Inicio <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="index.html">Poblacion</a></li>
+                      <li><a href="index2.html">Desplazamiento</a></li>
+                      <li><a href="index3.html">Muertes</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-edit"></i> Formularios <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="form.html">Formulario General</a></li>
+                      <li><a href="form_validation.html">Validación de Formulario</a></li>
+                      <li><a href="form_upload.html">Subir Formulario</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-desktop"></i> Herramientas <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="calendar.html">Calendario</a></li>
+					  <li><a href="contacts.html">Usuarios</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-table"></i> Tablas <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="tables.html">Poblacion</a></li>
+                      <li><a href="tables_dynamic.html">Desplazamiento vs Muerte</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-bar-chart-o"></i> Presentación de datos <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="chartjs.html">Graficas</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+		  </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Herramientas">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Pantalla Completa">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Vista">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Cerrar Sesion" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          
+		</div>
+        
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/img.jpg" alt="">Juan J. Ortiz
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> Perfil</a></li>
+                    <li>
+                      <a href="javascript:;">
+                        <span class="badge bg-red pull-right">50%</span>
+                        <span>Herramientas</span>
+                      </a>
+                    </li>
+                    <li><a href="javascript:;">Ayuda</a></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Cerrar Sesion</a></li>
+                  </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">2</span>
+                  </a>
+                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img10.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John J. Arias Garcia</span>
+                          <span class="time">5/Dic/2018</span>
+                        </span>
+                        <span class="message">
+                          Ése es el problema de observar las cosas. Nada resulta del todo claro...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img11.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>Jose L.Gonzalez Ortiz</span>
+                          <span class="time">4/Dic/2018</span>
+                        </span>
+                        <span class="message">
+                          En realidad, los seguros de vida son seguros de muerte...
+                        </span>
+                      </a>
+                    </li>
+                   <li>
+                      <div class="text-center">
+                        <a>
+                          <strong>Ver todas las alertas</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3>Informacion de Usuarios</h3>
+              </div>
+
+              <div class="title_right">
+                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Buscar por...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">Buscar</button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="x_panel">
+                  <div class="x_content">
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                        <ul class="pagination pagination-split">
+                          <li><a href="#">A</a></li>
+                          <li><a href="#">B</a></li>
+                          <li><a href="#">C</a></li>
+                          <li><a href="#">D</a></li>
+                          <li><a href="#">E</a></li>
+                          <li>...</li>
+                          <li><a href="#">W</a></li>
+                          <li><a href="#">X</a></li>
+                          <li><a href="#">Y</a></li>
+                          <li><a href="#">Z</a></li>
+                        </ul>
+                      </div>
+
+                      <div class="clearfix"></div>
+
+                      <div class="col-md-4 col-sm-4 col-xs-12 profile_details">
+                        <div class="well profile_view">
+                          <div class="col-sm-12">
+						  <h4 class="brief"><i>Andecol</i></h4>
+                            <div class="left col-xs-8">
+                              <h2>José A. Gutierrez</h2>
+                              <p><strong>Cargo:</strong> Asesor Zona Centro </p>
+                              <ul class="list-unstyled">
+							  <p><strong>Correo:</strong> jgutierrez@andecol.com</p>
+                              <p><strong># Telefonico:</strong> 301-5679588</p>
+                              </ul>
+                            </div>
+                            <div class="right col-xs-4 text-center">
+                              <img src="images/img1.jpg" alt="" class="img-circle img-responsive">
+                            </div>
+                          </div>
+                         </div>
+                      </div>
+
+                      <div class="col-md-4 col-sm-4 col-xs-12 profile_details">
+                        <div class="well profile_view">
+                          <div class="col-sm-12">
+						  <h4 class="brief"><i>Andecol</i></h4>
+                            <div class="left col-xs-8">
+                              <h2>Luís E. Sandoval</h2>
+                              <p><strong>Cargo:</strong> Asesor Zona Norte </p>
+                              <ul class="list-unstyled">
+							  <p><strong>Correo:</strong> lsandoval@andecol.com</p>
+                              <p><strong># Telefonico:</strong> 301-5679358</p>
+                              </ul>
+                            </div>
+                            <div class="right col-xs-4 text-center">
+                              <img src="images/img2.jpg" alt="" class="img-circle img-responsive">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 col-sm-4 col-xs-12 profile_details">
+                        <div class="well profile_view">
+                          <div class="col-sm-12">
+						  <h4 class="brief"><i>Andecol</i></h4>
+                            <div class="left col-xs-8">
+                              <h2>Maria A. Moreno</h2>
+                              <p><strong>Cargo:</strong> Asesor Zona Sur </p>
+                              <ul class="list-unstyled">
+							  <p><strong>Correo:</strong> mmoreno@andecol.com</p>
+                              <p><strong># Telefonico:</strong> 301-5679154</p>
+                              </ul>
+                            </div>
+                            <div class="right col-xs-4 text-center">
+                              <img src="images/img3.jpg" alt="" class="img-circle img-responsive">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 col-sm-4 col-xs-12 profile_details">
+                        <div class="well profile_view">
+                          <div class="col-sm-12">
+						  <h4 class="brief"><i>Andecol</i></h4>
+                            <div class="left col-xs-8">
+                              <h2>Ana M. Gutierrez</h2>
+                              <p><strong>Cargo:</strong> Asesor Zona Centro </p>
+                              <ul class="list-unstyled">
+							  <p><strong>Correo:</strong> agutierrez@andecol.com</p>
+                              <p><strong># Telefonico:</strong> 301-5679908</p>
+                              </ul>
+                            </div>
+                            <div class="right col-xs-4 text-center">
+                              <img src="images/img4.jpg" alt="" class="img-circle img-responsive">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-4 col-sm-4 col-xs-12 profile_details">
+                        <div class="well profile_view">
+                          <div class="col-sm-12">
+						  <h4 class="brief"><i>Andecol</i></h4>
+                            <div class="left col-xs-8">
+                              <h2>Carmen V. Mendez</h2>
+                              <p><strong>Cargo:</strong> Asesor Zona Norte </p>
+                              <ul class="list-unstyled">
+							  <p><strong>Correo:</strong> cmendez@andecol.com</p>
+                              <p><strong># Telefonico:</strong> 301-5679356</p>
+                              </ul>
+                            </div>
+                            <div class="right col-xs-4 text-center">
+                              <img src="images/img5.jpg" alt="" class="img-circle img-responsive">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 col-sm-4 col-xs-12 profile_details">
+                        <div class="well profile_view">
+                          <div class="col-sm-12">
+						  <h4 class="brief"><i>Andecol</i></h4>
+                            <div class="left col-xs-8">
+                              <h2>Carlos A. Estupiñan</h2>
+                              <p><strong>Cargo:</strong> Asesor Zona Centro </p>
+                              <ul class="list-unstyled">
+							  <p><strong>Correo:</strong> cestupiñan@andecol.com</p>
+                              <p><strong># Telefonico:</strong> 301-5679878</p>
+                              </ul>
+                            </div>
+                            <div class="right col-xs-4 text-center">
+                              <img src="images/img6.jpg" alt="" class="img-circle img-responsive">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 col-sm-4 col-xs-12 profile_details">
+                        <div class="well profile_view">
+                          <div class="col-sm-12">
+						  <h4 class="brief"><i>Andecol</i></h4>
+                            <div class="left col-xs-8">
+                              <h2>Romulo J. Rodriguez</h2>
+                              <p><strong>Cargo:</strong> Asesor Zona Centro </p>
+                              <ul class="list-unstyled">
+							  <p><strong>Correo:</strong> rrodriguez@andecol.com</p>
+                              <p><strong># Telefonico:</strong> 301-5679193</p>
+                              </ul>
+                            </div>
+                            <div class="right col-xs-4 text-center">
+                              <img src="images/img7.jpg" alt="" class="img-circle img-responsive">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 col-sm-4 col-xs-12 profile_details">
+                        <div class="well profile_view">
+                          <div class="col-sm-12">
+						  <h4 class="brief"><i>Andecol</i></h4>
+                            <div class="left col-xs-8">
+                              <h2>David S. Gongora</h2>
+                              <p><strong>Cargo:</strong> Asesor Zona Norte </p>
+                              <ul class="list-unstyled">
+							  <p><strong>Correo:</strong> dgongonra@andecol.com</p>
+                              <p><strong># Telefonico:</strong> 301-5679905</p>
+                              </ul>
+                            </div>
+                            <div class="right col-xs-4 text-center">
+                              <img src="images/img8.jpg" alt="" class="img-circle img-responsive">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 col-sm-4 col-xs-12 profile_details">
+                        <div class="well profile_view">
+                          <div class="col-sm-12">
+						  <h4 class="brief"><i>Andecol</i></h4>
+                            <div class="left col-xs-8">
+                              <h2>Daniel F. Sanchez</h2>
+                              <p><strong>Cargo:</strong> Asesor Zona Centro </p>
+                              <ul class="list-unstyled">
+							  <p><strong>Correo:</strong> dsanchez@andecol.com</p>
+                              <p><strong># Telefonico:</strong> 301-5679524</p>
+                              </ul>
+                            </div>
+                            <div class="right col-xs-4 text-center">
+                              <img src="images/img9.jpg" alt="" class="img-circle img-responsive">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Andecol - Analisis de poblacion desplazada y niveles de mortalidad en Colombia
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+  </body>
+</html>
