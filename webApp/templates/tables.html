@@ -1,4 +1,3 @@
-{% load staticfiles i18n %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,22 +9,17 @@
 
     <title>Tabla de Datos | Andecol | </title>
 
-    {% block css %}
-
     <!-- Bootstrap -->
-    <link href="{% static '../vendors/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="static/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="{% static '../vendors/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="static/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
-    <link href="{% static '../vendors/nprogress/nprogress.css' %}" rel="stylesheet">
+    <link href="static/vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- iCheck -->
-   <link href="{% static '../vendors/iCheck/skins/flat/green.css' %}" rel="stylesheet">
+   <link href="static/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
-    <link href="{% static '../build/css/custom.min.css' %}" rel="stylesheet">
-
-    {% endblock css %}
-
+    <link href="static/build/css/custom.min.css" rel="stylesheet">
   </head>
 
   <body class="nav-md">
@@ -124,12 +118,12 @@
 
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
-                  <a href="{% static 'javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                     <img src="images/img.jpg" alt="">Juan J. Ortiz Piñeros
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
-                    <li><a href="{% static 'javascript:;"> Perfil</a></li>
+                    <li><a href="javascript:;"> Perfil</a></li>
                     <li>
                       <a href="javascript:;">
                         <span class="badge bg-red pull-right">50%</span>
@@ -149,7 +143,7 @@
                   <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
                     <li>
                       <a>
-                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="images/img10.jpg" alt="Profile Image" /></span>
                         <span>
                           <span>John J. Arias Garcia</span>
                           <span class="time">5/Dic/2018</span>
@@ -161,7 +155,7 @@
                     </li>
                     <li>
                       <a>
-                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="images/img11.jpg" alt="Profile Image" /></span>
                         <span>
                           <span>Jose L.Gonzalez Ortiz</span>
                           <span class="time">5/Dic/2018</span>
@@ -653,22 +647,18 @@
       </div>
     </div>
 
-    {% block js %}
-
     <!-- jQuery -->
-    <script src="{% statc '../vendors/jquery/dist/jquery.min.js'%}"></script>
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <script src="{% statc '../vendors/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- FastClick -->
-    <script src="{% statc '../vendors/fastclick/lib/fastclick.js' %}"></script>
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
-    <script src="{% statc '../vendors/nprogress/nprogress.js' %}"></script>
+    <script src="../vendors/nprogress/nprogress.js"></script>
     <!-- iCheck -->
-    <script src="{% statc '../vendors/iCheck/icheck.min.js' %}"></script>
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+
     <!-- Custom Theme Scripts -->
-    <script src="{% statc '../build/js/custom.min.js' %}"></script>
-
-    {% endblock js %}
-
+    <script src="../build/js/custom.min.js"></script>
   </body>
 </html>
